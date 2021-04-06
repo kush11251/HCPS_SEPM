@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "397914287621",
+    "project_id": "sepmhcps",
+    "storage_bucket": "sepmhcps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397914287621:android:3fe544cb241fc1aa87766c",
+        "android_client_info": {
+          "package_name": "com.example.hcps_sepm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397914287621-f7kf30btrf0epdhvc82hnjmlcq47u9l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj0lKqN38nXBXnQfrDGBqOlOMGpOeyN6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397914287621-f7kf30btrf0epdhvc82hnjmlcq47u9l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
