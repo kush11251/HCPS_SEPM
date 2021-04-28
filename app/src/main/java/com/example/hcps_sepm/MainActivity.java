@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView mProfile,mSetting,mTimer,mMedicine;
+    ImageView mProfile,mSetting,mTimer,mMedicine,mSteps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mProfile            = findViewById(R.id.profileImageView);
+        mSteps              = findViewById(R.id.stepsImageView);
         mSetting            = findViewById(R.id.settingImageView);
         mTimer              = findViewById(R.id.timerImageView);
         mMedicine           = findViewById(R.id.medicineImageView);
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            }
+        });
+
+        mSteps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),StepsActivity.class));
             }
         });
 
@@ -55,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(),"Not Allowed!!!!",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"Not Allowed!!!!",Toast.LENGTH_SHORT).show();
     }
 
     public void logout(View view) {

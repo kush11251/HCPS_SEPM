@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HCPS_SEPM">
-        <activity android:name=".MedicineActivity"></activity>
+        <activity android:name=".StepsActivity"></activity>
+        <activity
+            android:name=".MedicineActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".TimerActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".ProfileActivity" />
