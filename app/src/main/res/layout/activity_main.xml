@@ -34,6 +34,17 @@
 
     <ImageView
         android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/settingImageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="344dp"
@@ -44,17 +55,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
-
-    <ImageView
-        android:id="@+id/settingImageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31"
         app:srcCompat="@drawable/setting" />
 
     <ImageView
@@ -72,11 +72,11 @@
         android:id="@+id/medicineImageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintVertical_bias="0.31"
         app:srcCompat="@drawable/pill" />
 
     <Button
@@ -96,9 +96,9 @@
         android:id="@+id/stepsImageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31"
         app:srcCompat="@drawable/steps" />
