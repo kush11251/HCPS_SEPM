@@ -35,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
         mSteps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),StepsActivity.class));
+                String packageName = "de.j4velin.pedometer";
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage(packageName);
+                if (launchIntent != null) {
+                    startActivity(launchIntent);
+                } else {
+                    Toast.makeText(MainActivity.this, "There is no package available in android", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -49,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
         mTimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),TimerActivity.class));
+                String packageName = "com.better.alarm.debug";
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage(packageName);
+                if (launchIntent != null) {
+                    startActivity(launchIntent);
+                } else {
+                    Toast.makeText(MainActivity.this, "There is no package available in android", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
